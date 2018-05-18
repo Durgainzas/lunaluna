@@ -1,0 +1,56 @@
+Navrh
+
+
+3:48 8.7.2013
+
+    ZJISTIT JAK JE TO S EMAILEM *****@LUNA-LUNADESIGN.CZ
+
+    Galerie - podkategorie
+        
+        Nahledy
+            
+            vymyslet rozmery
+            zarovnani
+            ramecek
+            scrolovani?
+        
+        Obrazek
+        
+            sipka na zvetseni obrazku?
+            sipky v obrazku
+                mozna jako pozadi v divu
+                odkaz pozicovat pomoci display: block;
+                otazka, jak bude fungovat prekryti
+            popis?
+            efekty prechodu?
+
+----------------------------------------
+
+Progres
+
+
+3:47 8.7.2013
+
+    Galerie
+
+        Doplnen jestrab a zarovnan do prava
+
+    Galerie - podkategorie
+
+        Text
+        
+            upraven preklep malby.html
+            upraveny zavorky byt2.html
+            prepsani dvojek za index ^2
+            
+        
+        Obrazek
+        
+            Zmenseni o 30px kvuli nahledum
+            
+        Nahledy
+            
+            vytvoreny nahledy 
+            generuji se podle z - pocet obr. ve slozce
+            jsou klikatelne - zmeni hlavni obrazek
+            zarovnani na stred

@@ -1,0 +1,341 @@
+/*Souhrnne*/
+
+html {
+	overflow: -moz-scrollbars-vertical; 
+}
+
+body {
+	background: rgb(0, 0, 0);
+	/*background: rgb(113, 30, 30);*/
+}
+
+	/*Pismenka*/
+@font-face {
+	font-family: 'bauhaus';
+	src: url('BAHAMAL0.TTF');
+}
+
+@font-face {
+	font-family: 'bauhausIE';
+	src: url('BAHAMAL0.eot');
+}
+
+	/*main*/
+#main {
+	width: 700px;
+	margin: auto; 
+	margin-top: 30px;
+	color: rgb(190, 143, 116);
+	/*background-image: url('grafika/bg.jpg');*/
+	background-repeat: no-repeat;
+}
+
+
+	/* Hlavicka */
+#hlavicka {
+	text-align: center;
+	font-family: 'bauhaus', 'bauhausIE';
+	
+	height: 75px;
+	font-weight: bold;
+	margin: auto;
+}
+
+#hlavicka table td {
+	width: 110px;
+	height: 60px;
+	vertical-align: bottom;
+	font-variant: small-caps;
+	font-size: 18px;
+	white-space: nowrap;
+
+}
+#hlavicka a {
+	color: rgb(190, 143, 116);
+	text-decoration: none;
+}
+#hlavicka a:hover {
+	color: rgb(255, 207, 183);
+	text-decoration: none;
+}
+#hlavicka .aktivni a {
+	color: rgb(199, 32, 0);
+	text-decoration: none;
+}
+
+
+	/*Lista*/
+#lista {
+	margin: auto;
+}
+
+
+	/*Obsah*/
+#obsah {
+	margin: auto;
+}
+
+#obsah h1 {
+	font-family: 'bauhaus','bauhausIE';
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 60px;
+}
+
+
+/*Jednotlive stranky*/
+
+
+	/*uvod*/
+#uvod {
+	width: 1200px;
+	height: 700px;
+	margin: auto; 
+	margin-top: 0px;
+	color: rgb(190, 143, 116);
+	background-image: url('grafika/lunaweb.jpg');
+	background-repeat: no-repeat;
+	text-align: center;
+}
+#uvod a {
+	color: rgb(190, 143, 116);
+	text-decoration: underline;
+}
+#uvod a:hover {
+	color: rgb(255, 207, 183);
+	text-decoration: none;
+}
+#uvod .obr_odkaz {
+	margin: auto;
+	width: 1200px;
+	position: relative;
+	top: 97px;
+	left: 0px;
+	height: 504px;
+	border-style: none;
+}
+#uvod .popisek {
+	margin: auto;
+	position: relative;
+	top: 120px;
+	font-size: 30px;
+	font-family: 'bauhaus', 'bauhausIE';
+	font-weight: 600;
+}
+
+
+
+	/*motto*/
+.motto_nadpis {
+	text-align: center;
+}
+.motto_citaty {
+	font-family: 'bauhaus', 'bauhausIE';
+	text-align: center;
+	font-size: 19px;
+	line-height: 23px;
+}
+.motto_podpis {
+	line-height: 18px;
+	font-size: 15px;
+}
+.motto_obrazek {
+	text-align: right;
+}
+
+
+	/*o nas*/
+.onas_tabulka {
+	width: 640px;
+	margin: auto;
+	/*font-family: 'ArialMT', 'Arial', sans-serif;*/
+	font-family: 'bauhaus', 'bauhausIE';
+	font-size: 15px;
+}
+.onas_tabulka td {
+	width: 280px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.onas_tabulka p {
+	text-align: justify;
+	margin-top: 0px;
+	margin-bottom: 7px;
+}
+.onas_zvyrazneni {
+	font-weight: 700;
+}
+.onas_epilog {
+	font-weight: 300;
+	padding-top: 20px;
+	text-transform: uppercase;
+	font-family: 'bauhaus', 'bauhausIE';
+	font-size: 15px;
+}
+.onas_malyodkaz {
+	color: rgb(190, 143, 116);
+}
+.onas_malyodkaz:hover {
+	color: rgb(255, 207, 183);
+	text-decoration: none;
+}
+.onas_obrazek1 {
+	padding-top: 100px;
+}
+.onas_obrazek2 {
+	padding-left: 50%;
+	padding-right: 50%;
+}
+
+
+	/*interier*/
+.interier {
+	padding-left: 30px;
+	padding-right: 30px;
+	/*font-family: 'ArialMT', 'Arial', sans-serif;*/
+	font-family: 'bauhaus', 'bauhausIE';
+	font-size: 14px;
+	text-align: justify;
+}
+.interier_obrazek1 {
+	width: 260px;
+	height: auto;
+	float:right;
+	padding: 0px 20px 20px 20px;
+}
+.interier_obrazek2 {
+	float:right;
+	padding: 0px 20px 10px 20px;
+}
+.interier_obrazek3 {
+	width: auto;
+	height: 260px;
+	float:right;
+	padding: 0px 20px 20px 20px;
+}
+.interier_zmenseny {
+	font-size: 13.3px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 10px;
+}
+.interier_zvyrazneny {
+	font-weight: bold;
+}
+.interier_odskoceny {
+	clear: right;
+}
+
+
+	/*galerie*/
+.galerie {
+	padding-left: 30px;
+	padding-right: 30px;
+	/*font-family: 'ArialMT', 'Arial', sans-serif;*/
+	font-family: 'bauhaus', 'bauhausIE';
+}
+.galerie table {
+	margin: auto;
+	text-align: center;
+	border-style: none;
+	white-space: nowrap;
+}
+.galerie table img {
+	box-shadow: black 4px 6px 20px;
+	-webkit-box-shadow: black 4px 6px 20px;
+	-moz-box-shadow: black 4px 6px 20px; 
+	border-style: none;
+	width: 159px;
+	height: 116px;
+	
+}
+.galerie td {
+	padding: 10px 20px 10px 20px;
+}
+.galerie p {
+	margin-top: 7px;
+	margin-bottom: 0px;
+	font-size: 15px;
+}
+.galerie_odkaz {
+	color: rgb(190, 143, 116);
+	text-decoration: none;
+	border-style: none;
+}
+.galerie_odkaz:hover {
+	color: rgb(255, 207, 183);
+}
+.galerie_obrazek {
+	text-align: right;
+}
+
+
+	/*kontakt*/
+.kontakt {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.kontakt_tabulka {
+	width: 640px;
+	font-family: 'bauhaus', 'bauhausIE';	
+}
+.kontakt_left {
+	text-align:left
+}
+.kontakt_right {
+	text-align: right;
+}
+.kontakt_jmeno {
+	font-size: 35px;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+.kontakt_povolani {
+	margin-top: 0px;
+	margin-bottom: 40px;
+	font-size: 16px;
+	/*font-family: 'ArialMT', 'Arial', sans-serif;*/
+	font-family: 'bauhaus', 'bauhausIE';
+}
+.kontakt_cislo {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	/*font-family: 'ArialMT', 'Arial', sans-serif;*/
+	font-family: 'bauhaus', 'bauhausIE';
+}
+.kontakt_mail {
+	color: rgb(190, 143, 116);
+}
+.kontakt_mail:hover {
+	color: rgb(255, 207, 183);
+	text-decoration: none;
+}
+.kontakt_obrazek {
+	padding-top: 20px;
+	text-align: center;
+}
+
+
+	/*chybova*/
+#chyba {
+	margin: auto; 
+	margin-top: 30px;
+	color: rgb(190, 143, 116);
+	text-align: center;
+}
+#chyba a {
+	color: rgb(190, 143, 116);
+	text-decoration: underline;
+}
+#chyba a:hover {
+	color: rgb(255, 207, 183);
+	text-decoration: none;
+}
+#chyba .popisek {
+	margin: auto;
+	font-size: 30px;
+	font-family: 'bauhaus', 'bauhausIE';
+	font-weight: 600;
+}
+
+

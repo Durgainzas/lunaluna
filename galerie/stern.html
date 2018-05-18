@@ -1,0 +1,104 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Luna-Luna Design | Interier Stern</title>
+
+    <link rel="stylesheet" type="text/css" href="galerie.css">
+    <meta charset="UTF-8">
+    <script>
+	i = 1;
+	z = 1;
+
+	function nacteni(x){
+		if (x < z && x > 0){
+		document.getElementById('obr').src = asdf(x);
+		document.getElementById('obr').load();
+		}
+		else{
+			if (x > z){
+			i = x = 1;
+			document.getElementById('obr').src = asdf(x);
+			document.getElementById('obr').load();
+			}
+			else{
+			i = x = z;
+			document.getElementById('obr').src = asdf(x);
+			document.getElementById('obr').load();
+			}
+
+		}
+	}
+
+	function asdf(g){
+	a = ('stern_files/'+g+'.jpg');
+	return a;
+	}
+
+    </script>
+</head>
+<body>
+    <div id="main">
+        <div id="hlavicka">
+
+            <table>
+                <tr>
+                    <td><img src="../grafika/logo.png" alt="logo"></td>
+                    <td><a href="../motto.html">Motto</a></td>
+                    <td><a href="../onas.html">O nás</a></td>
+                    <td><a href="../interier.html">Tvorba interiéru</a></td>
+                    <td class="aktivni"><a href="../galerie.html">Galerie</a></td>
+                    <td><a href="../kontakt.html">Kontakt</a></td>
+                </tr>
+            </table>
+
+        </div>
+
+        <div id="lista">
+
+            <img src="../grafika/lista.jpg" alt='lista'>
+        </div>
+
+        <div id="obsah" itemscope itemtype="http://schema.org/CreativeWork">
+            <div class="vnitrni">
+
+                <h1 itemprop="headline">Interier Stern</h1>
+                <!--<table>
+                    <tr>
+                        <td class="levy">
+                            
+                            <p><code class="klikatelne ovladani" alt="stern" onClick="nacteni(i-=1)"><<</code></p>
+                        </td>
+                        <td class="prostredni rotate">
+                            <p><code class="klikatelne ovladani" alt="stern" onClick="location.href='../galerie.html'">></code></p>
+                        </td>
+                        <td class="pravy">
+                            <p><code class="klikatelne ovladani" alt="stern" onClick="nacteni(i+=1)">>></code></p>
+                        </td>
+                    </tr>
+                </table>-->
+
+                <div class="obrazek prostredni">
+                    <img class="klikatelne" src="stern_files/1.jpg" id="obr" alt="stern" onClick="nacteni(i+=1)">
+                </div>
+
+                <!--<div id="nahled" class="prostredni">
+                    <script>
+
+					function nahled()
+					{
+						var d;
+						for (d = 1; d <= z; ++d) {
+							document.write('<img class="klikatelne" src="stern_files/thumb/' + d + '.jpg" onclick="nacteni(i=' + d + ')" alt="" />');
+						}
+					}
+
+					nahled();
+
+                    </script>
+                </div>-->
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

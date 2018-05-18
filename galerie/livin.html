@@ -1,0 +1,134 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+ <title>Luna-Luna Design | Klub Livingstone</title>
+ 
+ <link rel="stylesheet" type="text/css" href="galerie.css">
+ <meta charset="UTF-8">
+
+ <script>
+	var i = 1;
+	var z = 7;
+	
+	function nacteni(x){
+		if (x < z && x > 0){
+		document.getElementById('obr').src = asdf(x);
+		document.getElementById('obr').load();
+		}
+		else{
+			if (x > z){
+			i = x = 1;
+			document.getElementById('obr').src = asdf(x);
+			document.getElementById('obr').load();
+			}
+			else{
+			i = x = z;
+			document.getElementById('obr').src = asdf(x);
+			document.getElementById('obr').load();
+			}
+			
+		}	
+	}
+	
+	function asdf(g){
+	var a = ('livin_files/'+g+'.jpg');
+	return a;
+	}
+	
+
+	
+	
+ </script>
+
+ </head>
+
+<body>
+
+<div id="main">
+
+	<div id="hlavicka">
+	
+		<table>
+		 <tr>
+			<td><img src="../grafika/logo.png" alt="logo"></td>
+			<td><a href="../motto.html">Motto</a></td>
+			<td><a href="../onas.html">O nás</a></td>
+			<td><a href="../interier.html">Tvorba interiéru</a></td>
+			<td class="aktivni"><a href="../galerie.html">Galerie</a></td>
+			<td><a href="../kontakt.html">Kontakt</a></td>
+		 </tr>
+		</table>
+	
+	</div>
+	
+	<div id="lista">
+	
+		<img src="../grafika/lista.jpg" alt='lista'>
+
+	</div>
+	
+	<div id="obsah" itemscope itemtype="http://schema.org/CreativeWork">
+		<div class="vnitrni">
+		
+			<h1 itemprop="headline">Cestovatelský Klub Livingstone</h1>
+			<p itemprop="text">
+			Zadavatelé požadovali zpracování přilehlých prostor klubu Livingstone v Brně. 
+			Z původního skladu kancelářských potřeb (cca 80m<span class="index">2</span>) měl vzniknout jakýsi 
+			rozměrný salonek s barem a malým pódiem pro event. drobnější produkce.
+			</p>
+			<p class="zvyrazneni" itemprop="text">
+			Realizace: 9. - 10. 2006
+			</p>
+			<p itemprop="text">
+			Jelikož jde o "cestovatelský klub", užily jsme k jeho ztvárnění motivy z říše fauny: 
+			sklápěcí barová mříž má formu ulity, na nerezových plochách je vyleptána krokodýlí kůže. 
+			Stěny zdobí ornament z jihoamerických tesaříků, jako svítidla slouží rohy nosorožce...
+			</p>
+			<p itemprop="text">
+			Kvalitně zhotovený nábytek byl vyroben v naší spřátelené truhlářské firmě.
+			</p>
+			<table>
+			<tr>
+				<td class="levy">
+					<!--<input class="klikatelne" type="button" value="Prev" onClick="nacteni(i-=1)">-->
+					<p><code class="klikatelne ovladani" alt="malby" onClick="nacteni(i-=1)"><<</code></p>
+				</td>
+				<td class="prostredni rotate">
+					<p><code class="klikatelne ovladani" alt="malby" onClick="location.href='../galerie.html'">></code></p>
+				</td>
+				<td class="pravy">
+					<p><code class="klikatelne ovladani" alt="malby" onClick="nacteni(i+=1)">>></code></p>
+				</td>
+			</tr>
+			</table>
+			
+			<div class="obrazek prostredni">
+				<img class="klikatelne" src="livin_files/1.jpg" id="obr" alt="livin" onClick="nacteni(i+=1)">
+			</div>
+			
+			<div id="nahled" class="prostredni">
+				<script>
+
+					function nahled()
+					{
+						var d;
+						for (d = 1; d <= z; ++d) {
+							document.write('<img class="klikatelne" src="livin_files/thumb/' + d + '.jpg" onclick="nacteni(i=' + d + ')" alt="nahled" />');
+						}
+					}
+					
+					nahled();
+					
+				</script>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+</body>
+
+</html>

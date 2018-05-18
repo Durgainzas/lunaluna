@@ -1,0 +1,128 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+ <title>Luna-Luna Design | Budoir mladé dámy</title>
+ 
+ <link rel="stylesheet" type="text/css" href="galerie.css">
+ <meta charset="UTF-8">
+
+ <script>
+	i = 1;
+	z = 8;
+	
+	function nacteni(x){
+		if (x < z && x > 0){
+		document.getElementById('obr').src = asdf(x);
+		document.getElementById('obr').load();
+		}
+		else{
+			if (x > z){
+			i = x = 1;
+			document.getElementById('obr').src = asdf(x);
+			document.getElementById('obr').load();
+			}
+			else{
+			i = x = z;
+			document.getElementById('obr').src = asdf(x);
+			document.getElementById('obr').load();
+			}
+			
+		}	
+	}
+	
+	function asdf(g){
+	a = ('byt2_files/'+g+'.jpg');
+	return a;
+	}
+
+ </script>
+
+ </head>
+
+<body>
+
+<div id="main">
+
+	<div id="hlavicka">
+	
+		<table>
+		 <tr>
+			<td><img src="../grafika/logo.png" alt="logo"></td>
+			<td><a href="../motto.html">Motto</a></td>
+			<td><a href="../onas.html">O nás</a></td>
+			<td><a href="../interier.html">Tvorba interiéru</a></td>
+			<td class="aktivni"><a href="../galerie.html">Galerie</a></td>
+			<td><a href="../kontakt.html">Kontakt</a></td>
+		 </tr>
+		</table>
+	
+	</div>
+	
+	<div id="lista">
+	
+		<img src="../grafika/lista.jpg" alt='lista'>
+
+	</div>
+	
+	<div id="obsah" itemscope itemtype="http://schema.org/CreativeWork">
+		<div class="vnitrni">
+		
+			<h1 itemprop="headline">Budoir mladé dámy</h1>
+			<p itemprop="text">
+			Klienti požadovali pro svoji dceru, dvacetiletou studentku architektury, originální zpracování poměrně prostorného bytu (60m<span class="index">2</span>) v zástavbě z 50-tých let. Dali nám zcela volnou ruku s těmito podmínkami: dívka preferuje velký, vzdušný, otevřený prostor a teplé tóny.
+			</p>
+			<p class="zvyrazneni">
+			Realizace: 2. - 4. 2010
+			</p>
+			<p itemprop="text">
+			Byly tedy vybourány příčky mezi předsíní, obývákem a kuchyní a celý prostor (vč. koupelny a WC) pak sjednocen položením šachovnicové dlažby.Parkety zůstaly pouze v ložnici. Nechaly jsme do oblouků osekat a obrousit na cihlu komínovou zeď a ostění největšího okna (domníváme se totiž, že mezi rovinami a oblinami by měla panovat rovnováha...).
+			</p>
+			<p itemprop="text">
+			Na stěny jsme natáhly štuk ve starorůžovém odstínu a zeď v předsíni nechaly obložit zrcadly. Prostor pod kuchyňskou linkou, zhotovenou na míru, zakrývá závěs z čajových lžiček. Na závěr jsme vyrobily liliový lustřík a výsledek pak nazvaly "Dívčím budoirem".
+			</p>
+			
+			<table>
+			<tr>
+				<td class="levy">
+					<!--<input class="klikatelne" type="button" value="Prev" onClick="nacteni(i-=1)">-->
+					<p><code class="klikatelne ovladani" alt="malby" onClick="nacteni(i-=1)"><<</code></p>
+				</td>
+				<td class="prostredni rotate">
+					<p><code class="klikatelne ovladani" alt="malby" onClick="location.href='../galerie.html'">></code></p>
+				</td>
+				<td class="pravy">
+					<p><code class="klikatelne ovladani" alt="malby" onClick="nacteni(i+=1)">>></code></p>
+				</td>
+			</tr>
+			</table>
+			
+			<div class="obrazek prostredni">
+				<img  class="klikatelne" src="byt2_files/1.jpg" id="obr" alt="byt2" onClick="nacteni(i+=1)">
+			</div>
+						
+			<div id="nahled" class="prostredni">
+				<script>
+
+					function nahled()
+					{
+						var d;
+						for (d = 1; d <= z; ++d) {
+							document.write('<img class="klikatelne" src="byt2_files/thumb/' + d + '.jpg" onclick="nacteni(i=' + d + ')" alt="" />');
+						}
+					}
+					
+					nahled();
+					
+				</script>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+</body>
+
+</html>

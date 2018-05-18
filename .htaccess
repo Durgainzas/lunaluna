@@ -1,0 +1,5 @@
+#hlavni .htaccess
+
+ErrorDocument 404 http://luna-lunadesign.cz/404.html
+
+#Redirect /galerie/ http://luna-lunadesign.cz/galerie.html

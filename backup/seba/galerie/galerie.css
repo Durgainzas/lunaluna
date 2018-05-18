@@ -1,0 +1,149 @@
+/*Souhrnne*/
+
+
+body {
+	background: rgb(113, 30, 30);
+}
+
+@font-face {
+	font-family: 'bauhaus';
+	src: url('itc-bauhaus-lt-light.ttf') format('truetype');
+}
+
+
+	/*main*/
+#main {
+	width: 700px;
+	margin: auto; 
+	margin-top: 30px;
+	color: rgb(190, 143, 116);
+	background-image: url('../grafika/bg.jpg');
+	background-repeat: no-repeat;
+}
+
+
+	/* Hlavicka */
+#hlavicka {
+	text-align: center;
+	font-family: 'bauhaus', 'calibri';	
+	height: 75px;
+	font-weight: bold;
+	margin: auto;
+}
+
+#hlavicka table td {
+	width: 110px;
+	height: 60px;
+	vertical-align: bottom;
+	font-variant: small-caps;
+	font-size: 18px;
+	white-space: nowrap;
+
+}
+#hlavicka a {
+	color: rgb(190, 143, 116);
+	text-decoration: none;
+}
+#hlavicka a:hover {
+	color: rgb(255, 207, 183);
+	text-decoration: none;
+}
+#hlavicka .aktivni a {
+	color: rgb(199, 32, 0);
+	text-decoration: none;
+}
+
+
+	/*Lista*/
+#lista {
+	margin: auto;
+}
+
+
+	/*Obsah*/
+#obsah {
+	margin: auto;
+	width: 100%;
+	text-align: justify;
+	font-family: 'ArialMT', 'Arial', sans-serif;
+}
+
+#obsah h1 {
+	font-family: 'bauhaus','calibri';
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 40px;
+}
+
+
+/*Galerie*/
+
+.stin {
+	
+}
+.klikatelne {
+	cursor: pointer;
+}
+.levy {
+	text-align: left;
+}
+.pravy {
+	text-align: right;
+}
+.prostredni {
+	text-align: center;
+}
+.blokovy {
+	text-align: justify;
+}
+.obrazek {
+	margin: auto;
+	width: 640px;
+}
+.zvyrazneni {
+	font-weight: 700;
+}
+
+#obr {
+	max-width: 100%;
+	height: 350px;
+	box-shadow: black 4px 6px 20px;
+	-webkit-box-shadow: black 4px 6px 20px;
+	-moz-box-shadow: black 4px 6px 20px;
+	float: none;
+}
+#nahled {
+	width: 600px;
+	margin: 20px auto 0px auto;
+}
+#nahled img {
+	width: 60px;
+	height: 60px;
+	padding: 2px;
+}
+
+
+	/*Vnitrni*/
+.vnitrni {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.vnitrni h1 {
+	text-align: left;
+}
+.vnitrni table {
+	width: 640px;
+	height: 20px;
+	padding-bottom: 10px;
+}
+.vnitrni p {
+	font-size: 13px;
+}
+.vnitrni .index {
+	vertical-align: super;
+	font-size: 11px;
+}
+.sipka {
+	width: 40px;
+	height: 40px;
+}

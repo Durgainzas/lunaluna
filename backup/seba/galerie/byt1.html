@@ -1,0 +1,130 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+ <title>Byt č. 1</title>
+ 
+ <link rel="stylesheet" type="text/css" href="galerie.css">
+ <meta charset="UTF-8">
+
+ <script>
+	i = 1;
+	z = 8;
+	
+	function nacteni(x){
+		if (x < z && x > 0){
+		document.getElementById('obr').src = asdf(x);
+		document.getElementById('obr').load();
+		}
+		else{
+			if (x > z){
+			i = x = 1;
+			document.getElementById('obr').src = asdf(x);
+			document.getElementById('obr').load();
+			}
+			else{
+			i = x = z;
+			document.getElementById('obr').src = asdf(x);
+			document.getElementById('obr').load();
+			}
+			
+		}	
+	}
+	
+	function asdf(g){
+	a = ('byt1_files/'+g+'.jpg');
+	return a;
+	}
+
+ </script>
+
+ </head>
+
+<body>
+
+<div id="main">
+
+	<div id="hlavicka">
+	
+		<table>
+		 <tr>
+			<td><img src="../grafika/logo.png" alt="logo"></td>
+			<td><a href="../motto.html">Motto</a></td>
+			<td><a href="../onas.html">O nás</a></td>
+			<td><a href="../interier.html">Tvorba interiéru</a></td>
+			<td class="aktivni"><a href="../galerie.html">Galerie</a></td>
+			<td><a href="../kontakt.html">Kontakt</a></td>
+		 </tr>
+		</table>
+	
+	</div>
+	
+	<div id="lista">
+	
+		<img src="../grafika/lista.jpg" alt='lista'>
+
+	</div>
+	
+	<div id="obsah">
+		<div class="vnitrni">
+		
+			<h1>Byt 1</h1>
+
+			<p>
+			Klienti požadovali upravení velmi malého bytu pro svého osmnáctiletého syna. Tento byt je situován v 5.patře činžovního domu v zástavbě z konce 19.stol.
+			</p>
+			<p class="zvyrazneni">
+			Realizace: 9. - 11. 2010
+			</p>
+			<p>
+			Pro nedostatek denního světla a prostoru musel být řešen zcela atypicky: předsíň byla prosvětlena vsazením kruhového okna, zhotoveného na zakázku, do vchodových dveří, stejně tak jsme nechaly zpracovat posuvné dveře do koupelny a WC. Ve výklenku předsíně je nerezový kuchyňský kout, námi vyrobený na míru.
+			</p>
+			<p>
+			Předsíň a pokoj odděluje – opět kvůli světlu – pouze kroužkový závěs z hliníku. V pokoji jsou ručně zpracované reliéfní stěny v odstínech lišejníku, s vnořenými horizontálními pruhy – pro optické rozšíření prostoru.
+			</p>
+			<p>
+			Zrestaurované parkety jsou doplněny hliníkovými profily namísto obvyklých dřevěných lišt.
+			</p>
+			<table>
+			<tr>
+				<td class="levy">
+					<input class="klikatelne" type="button" value="Prev" onClick="nacteni(i-=1)">
+				</td>
+				<td class="prostredni">
+					<input class="klikatelne" type="button" value="Up" onClick="location.href='../galerie.html'">
+				</td>
+				<td class="pravy">
+					<input class="klikatelne" type="button" value="Next" onClick="nacteni(i+=1)">
+				</td>
+			</tr>
+			</table>
+
+			<div class="obrazek prostredni">
+				<img class="klikatelne" src="byt1_files/1.jpg" id="obr" alt="byt1" onClick="nacteni(i+=1)">
+			</div>
+						
+			<div id="nahled" class="prostredni">
+				<script>
+
+					function nahled()
+					{
+						var d;
+						for (d = 1; d <= z; ++d) {
+							document.write('<img class="klikatelne" src="byt1_files/thumb/' + d + '.jpg" onclick="nacteni(i=' + d + ')" alt="" />');
+						}
+					}
+					
+					nahled();
+					
+				</script>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+</body>
+
+</html>
